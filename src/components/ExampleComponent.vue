@@ -5,6 +5,17 @@
 			<p class="text-green-800 font-bold" v-show="!!msg">
 				{{ msg }}
 			</p>
+			<a
+					@click="counter++"
+					class="bg-black-100" :class="{'bg-red-500': counter > 10}"
+			>
+			Ked klikne 10 tak budem cerveny
+			</a>
+			<a
+
+			>
+				{{counter}}
+			</a>
 		</div>
 	</div>
 </template>
@@ -13,7 +24,8 @@
 export default {
 	data: function() {
 		return {
-			name: 'ExampleComponent.vue'
+			name: 'ExampleComponent.vue',
+			counter: 0
 		};
 	},
 	props: {
