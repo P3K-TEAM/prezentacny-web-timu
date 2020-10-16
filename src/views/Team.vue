@@ -23,28 +23,24 @@ export default {
 			message: 'It works from variable as well!',
 			persons: [
 				{
-					id: 1,
-					name: 'Valentino Vranic',
-					description: 'Avendzenders',
-					image: '../assets/imgs/valentino.png'
+					name: 'Karin Maliniaková',
+					description: 'Vedúcka',
+					image: 'img/karin_maliniakova.jpeg'
 				},
 				{
-					id: 2,
-					name: 'Valentino Vranic',
-					description: 'Avendzenders',
-					image: '../assets/imgs/valentino.png'
+					name: 'Valentino Vranić',
+					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
+					image: 'img/valentino.png'
 				},
 				{
-					id: 3,
-					name: 'Valentino Vranic',
-					description: 'Avendzenders',
-					image: '../assets/imgs/valentino.png'
+					name: 'Valentino Vranić',
+					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
+					image: 'img/valentino.png'
 				},
 				{
-					id: 4,
-					name: 'Valentino Vranic',
-					description: 'Avendzenders',
-					image: '../assets/imgs/valentino.png'
+					name: 'Valentino Vranić',
+					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
+					image: 'img/valentino.png'
 				}
 			]
 		};
