@@ -1,8 +1,19 @@
 <template>
-	<div>
-		<DocumentItem v-for="document in documents" :key="document.name" :name="document.name" :link="document.link">
-
-		</DocumentItem>
+	<div class="bg-gray-200">
+		<div class="container mx-auto mt-10">
+			<h1 class="text-2xl font-bold mb-4">
+				Dokumenty
+			</h1>
+			<div class="bg-white rounded shadow">
+				<DocumentItem
+					v-for="document in documents"
+					:key="document.name"
+					:name="document.name"
+					:link="document.link"
+				>
+				</DocumentItem>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -15,11 +26,11 @@ export default {
 	},
 	data: function() {
 		return {
-			documents:[
-				{name:"report.pdf", link:"/document/report.pdf"},
-				{name:"report.pdf", link:"/document/report.pdf"},
-				{name:"report.pdf", link:"/document/report.pdf"},
-				{name:"report.pdf", link:"/document/report.pdf"}
+			documents: [
+				{ name: 'Report.pdf', link: '/download/report.pdf' },
+				{ name: 'Report.pdf', link: '/download/report.pdf' },
+				{ name: 'Report.pdf', link: '/download/report.pdf' },
+				{ name: 'Report.pdf', link: '/download/report.pdf' }
 			]
 		};
 	}
