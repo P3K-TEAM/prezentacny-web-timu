@@ -16,6 +16,10 @@
 
 <script>
 export default {
-	props: ['image', 'name', 'description']
+	props: {
+		image: String,
+		name: String,
+		description: String
+	}
 };
 </script>
