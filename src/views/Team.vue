@@ -1,8 +1,8 @@
 <template>
 	<div class="flex">
 		<Person
-			v-for="person in persons"
-			:key="person.id"
+			v-for="(person, index) in persons"
+			:key="index"
 			:description="person.description"
 			:name="person.name"
 			:image="person.image"
