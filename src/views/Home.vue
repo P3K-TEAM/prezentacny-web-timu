@@ -1,22 +1,12 @@
 <template>
-	<div>
-		<ExampleComponent />
-		<ExampleComponent msg="It works! 🎉" />
-		<ExampleComponent :msg="message" />
-	</div>
+	<div></div>
 </template>
 
 <script>
-import ExampleComponent from '@/components/ExampleComponent.vue';
-
 export default {
-	components: {
-		ExampleComponent
-	},
+	components: {},
 	data: function() {
-		return {
-			message: 'It works from variable as well!'
-		};
+		return {};
 	}
 };
 </script>
