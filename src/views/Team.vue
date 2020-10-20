@@ -1,6 +1,6 @@
 <template>
 	<div class="bg-gray-200">
-		<div class="container flex flex-wrap mx-auto pt-40">
+		<div class="container flex flex-wrap mx-auto mb-24">
 			<Person
 				v-for="(person, index) in persons"
 				:key="index"

@@ -1,12 +1,12 @@
 <template>
-	<div class="w-1/4 mb-32">
-		<div class="h-64 flex relative items-end">
+	<div class="w-1/4 flex flex-col justify-end mt-48">
+		<div class="flex relative items-end">
 			<img
-				class="w-full h-auto absolute person-image"
+				class="w-auto absolute person-image"
 				:src="image"
 				:alt="name"
 			/>
-			<div class="h-40 w-full block bg-primary"></div>
+			<div class="h-32 w-full bg-primary"></div>
 		</div>
 		<div class="bg-cyan-100 py-4 text-center">
 			<strong class="text-primary text-xl">
@@ -35,10 +35,15 @@ export default {
 
 <style lang="scss" scoped>
 .person-image {
-	bottom:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 18rem;
 }
 
 .description-box {
-	max-height: 5rem;
+	height: 4rem;
 }
 </style>
