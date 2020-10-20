@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-gray-200">
+	<div class="bg-gray-100">
 		<div class="container flex flex-wrap mx-auto mb-24">
 			<Person
 				v-for="(person, index) in persons"
