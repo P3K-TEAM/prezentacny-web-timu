@@ -52,7 +52,7 @@ export default {
 				{
 					name: 'Bc. Denisa Mensatorisová',
 					description: 'Backend developer, UX',
-					image: 'edited/denise-mensatorisova.png'
+					image: 'edited/denisa-mensatorisova.png'
 				},
 				{
 					name: 'Bc. Kristián Toldy',
