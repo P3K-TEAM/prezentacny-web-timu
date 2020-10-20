@@ -25,44 +25,44 @@ export default {
 			message: 'It works from variable as well!',
 			persons: [
 				{
-					name: 'Valentino Vranić',
-					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
+					name: 'Ing. Juraj Petrik',
+					description: 'Product Owner',
 					image: 'img/valentino.png'
 				},
 				{
-					name: 'Valentino Vranić',
-					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
-					image: 'img/valentino.png'
+					name: 'Bc. Karin Maliniaková',
+					description: 'Scrum Master, Frontend developer, UX',
+					image: 'edited/karin.png'
 				},
 				{
-					name: 'Valentino Vranić',
-					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
-					image: 'img/valentino.png'
+					name: 'Bc. František Gič',
+					description: 'Frontend developer, GitMaster, UX',
+					image: 'edited/fero.png'
 				},
 				{
-					name: 'Valentino Vranić',
-					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
-					image: 'img/valentino.png'
+					name: 'Bc. Vladimír Svitok',
+					description: 'Backend developer',
+					image: 'edited/vlado.png'
 				},
 				{
-					name: 'Valentino Vranić',
-					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
-					image: 'img/valentino.png'
+					name: 'Bc. Anton Rusňák',
+					description: 'Backend developer, NLP',
+					image: 'edited/anton.png'
 				},
 				{
-					name: 'Valentino Vranić',
-					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
-					image: 'img/valentino.png'
+					name: 'Bc. Denisa Mensatorisová',
+					description: 'Backend developer, UX',
+					image: 'edited/dena.png'
 				},
 				{
-					name: 'Valentino Vranić',
-					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
-					image: 'img/valentino.png'
+					name: 'Bc. Kristián Toldy',
+					description: 'Backend developer, Tester',
+					image: 'edited/kiko.png'
 				},
 				{
-					name: 'Valentino Vranić',
-					description: 'Avendžendžer a Thanos v jednom, SuperGarant',
-					image: 'img/valentino.png'
+					name: 'Bc. Oliver Kanát',
+					description: 'Backend developer, NLP',
+					image: 'edited/oliver.png'
 				}
 			]
 		};
