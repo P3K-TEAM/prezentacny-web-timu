@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import ContactItem from '@/components/ContactItem.vue';
+import ContactItem from '@/components/Contact/ContactItem.vue';
 
 export default {
 	components: {
