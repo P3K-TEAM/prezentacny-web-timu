@@ -25,7 +25,7 @@ export default {
 			message: 'It works from variable as well!',
 			persons: [
 				{
-					name: 'Ing. Juraj Petrik',
+					name: 'Ing. Juraj Petrík',
 					description: 'Vedúci tímu, Product Owner',
 					image: 'edited/juraj-petrik.png'
 				},
