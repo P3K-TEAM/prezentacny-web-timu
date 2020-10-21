@@ -20,7 +20,11 @@
 
 <script>
 export default {
-	props: {name:String, date:String, link:String}
+	props: {
+		name: String,
+		date: String,
+		link: String
+	}
 };
 </script>
 

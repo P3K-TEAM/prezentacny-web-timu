@@ -5,15 +5,12 @@
 </template>
 
 <script>
-
 export default {
 	props: {
 		title: {
-		type: String,
-		default: 'Tab'
+			type: String,
+			default: 'Tab'
 		}
-	},
-	
-	
+	}
 };
 </script>
