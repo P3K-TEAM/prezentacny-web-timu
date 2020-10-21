@@ -9,6 +9,7 @@
 					v-for="tab in Object.keys(documents)"
 					:key="tab"
 					:title="tab"
+					:active="tab === selectedTab"
 					@click.native="selectedTab = tab"
 				/>
 			</div>

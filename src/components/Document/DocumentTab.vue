@@ -1,5 +1,8 @@
 <template>
-	<div class="tab">
+	<div
+		class="tab border-primary"
+		:class="{ 'border-b-2': active }"
+	>
 		{{ title }}
 	</div>
 </template>
@@ -10,6 +13,10 @@ export default {
 		title: {
 			type: String,
 			default: 'Tab'
+		},
+		active: {
+			type: Boolean,
+			default: false
 		}
 	}
 };
