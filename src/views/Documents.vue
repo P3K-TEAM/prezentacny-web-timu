@@ -5,14 +5,12 @@
 				Dokumenty
 			</h1>
 			<div>
-				<div
+				<DocumentTab
 					v-for="tab in Object.keys(documents)"
 					:key="tab"
 					:title="tab"
-					@click="selectedTab = tab"
-				>
-					{{ tab }}
-				</div>
+					@click.native="selectedTab = tab"
+				/>
 			</div>
 			<div class="bg-white rounded shadow">
 				<DocumentItem
@@ -28,13 +26,13 @@
 </template>
 
 <script>
-//import Tab from '@/components/Document/DocumentTab.vue';
+import DocumentTab from '@/components/Document/DocumentTab.vue';
 import DocumentItem from '@/components/Document/DocumentItem.vue';
 
 export default {
 	components: {
-		DocumentItem
-		//Tab
+		DocumentItem,
+		DocumentTab
 	},
 	data: function() {
 		return {
@@ -64,8 +62,7 @@ export default {
 						link: '/download/sprint_0_retro.pdf'
 					}
 				],
-				'Exporty úloh': [
-				],
+				'Exporty úloh': [],
 				'Metodiky': [
 					{
 						name: 'metodika-vue.pdf',
