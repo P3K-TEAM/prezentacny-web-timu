@@ -1,5 +1,7 @@
 <template>
-	<div class="document-item border-grey-300 py-3 px-4">
+	<div
+		class="document-item border-grey-300 py-3 px-4 group hover:bg-gray-100"
+	>
 		<span class="inline-block w-1/4">
 			{{ name }}
 		</span>
@@ -9,9 +11,9 @@
 		<div class="inline-block w-1/4 text-right">
 			<a
 				:href="link"
-				class="bg-primary rounded text-white font-bold py-1 px-2 ml-auto"
+				class="bg-primary rounded text-white font-bold py-1 px-2 ml-auto invisible group-hover:visible"
 			>
-				Stiahnuť
+				<span class="mr-2">Stiahnuť</span>
 				<i class="fas fa-download" />
 			</a>
 		</div>

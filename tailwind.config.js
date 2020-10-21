@@ -29,7 +29,8 @@ module.exports = {
 		}
 	},
 	variants: {
-		borderWidth: ['group-hover']
+		borderWidth: ['group-hover'],
+		visibility: ['group-hover']
 	},
 	plugins: []
 };
