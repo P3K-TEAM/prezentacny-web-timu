@@ -5,11 +5,14 @@
 		>
 			<i :class="icon" class="fa-2x text-primary" />
 		</div>
-		<div class="ml-5 content-center">
+		<div
+			class="ml-5 content-center"
+			:class="{ 'group cursor-pointer': !!link }"
+		>
 			<a
 				v-if="link"
 				:href="link"
-				class="hover:border-b border-accent"
+				class="group-hover:border-b border-accent"
 				target="_blank"
 				v-html="text"
 			/>
