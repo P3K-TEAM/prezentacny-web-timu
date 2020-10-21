@@ -26,8 +26,8 @@ export default {
 			persons: [
 				{
 					name: 'Ing. Juraj Petrik',
-					description: 'Product Owner',
-					image: 'img/valentino.png'
+					description: 'Vedúci tímu, Product Owner',
+					image: 'edited/juraj-petrik.png'
 				},
 				{
 					name: 'Bc. Karin Maliniaková',
