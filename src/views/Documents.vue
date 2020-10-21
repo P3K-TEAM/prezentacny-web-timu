@@ -42,36 +42,49 @@ export default {
 			documents: {
 				'Zápisnice': [
 					{
-						name: 'Zapisnice.pdf',
+						name: 'zapisnica_1.pdf',
+						date: '08.10.2020',
+						link: '/download/zapisnica_1.pdf'
+					},
+					{
+						name: 'zapisnica_2.pdf',
+						date: '11.10.2020',
+						link: '/download/zapisnica_2.pdf'
+					},
+					{
+						name: 'zapisnica_3.pdf',
 						date: '21.10.2020',
-						link: '/download/report.pdf'
+						link: '/download/zapisnica_3.pdf'
 					}
 				],
 				'Retrospektívy': [
 					{
-						name: 'retrospektivy.pdf',
-						date: '21.10.2020',
-						link: '/download/report.pdf'
+						name: 'sprint_0_retro.pdf',
+						date: '22.10.2020',
+						link: '/download/sprint_0_retro.pdf'
 					}
 				],
 				'Exporty úloh': [
-					{
-						name: 'Export.pdf',
-						date: '21.10.2020',
-						link: '/download/report.pdf'
-					}
 				],
 				'Metodiky': [
 					{
-						name: 'Metodika.pdf',
+						name: 'metodika-vue.pdf',
 						date: '21.10.2020',
-						link: '/download/report.pdf'
+						link: '/download/metodika-vue.pdf'
+					},
+					{
+						name: 'metodika-git.pdf',
+						date: '19.10.2020',
+						link: '/download/metodika-.pdf'
+					},
+					{
+						name: 'metodika-django.pdf',
+						date: '16.10.2020',
+						link: '/download/metodika-django.pdf'
 					}
 				]
 			}
 		};
-	},
+	}
 };
 </script>
-
-
