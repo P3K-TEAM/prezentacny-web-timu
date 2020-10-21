@@ -3,13 +3,16 @@
 		<span class="inline-block w-1/4">
 			{{ name }}
 		</span>
-		<div class="inline-block w-3/4 text-right">
+		<span class="inline-block w-2/4 text-right">
+			{{ date }}
+		</span>
+		<div class="inline-block w-1/4 text-right">
 			<a
 				:href="link"
 				class="bg-primary rounded text-white font-bold py-1 px-2 ml-auto"
 			>
 				Stiahnuť
-				<i class="fas fa-download"></i>
+				<i class="fas fa-download" />
 			</a>
 		</div>
 	</div>
@@ -17,7 +20,7 @@
 
 <script>
 export default {
-	props: ['name', 'link']
+	props: {name:String, date:String, link:String}
 };
 </script>
 
