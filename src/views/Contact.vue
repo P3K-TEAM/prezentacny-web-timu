@@ -1,26 +1,23 @@
 <template>
-	<div class="bg-gray-200">
-		<div class="container mt-40 flex mx-auto text-left">
-			<div class="w-1/2 my-5">
-				<div>
-					<strong class="text-xl">Napíšte nám</strong>
-					<p>
-						V prípade akýchkoľvek otázok nás neváhajte kontaktovať
-						na jednom z uvedených linkov.
-					</p>
-				</div>
+	<div class="bg-gray-100 flex items-center">
+		<div class="flex justify-center w-1/2 bg-primary py-32 skewed-wrapper">
+			<div class="w-3/5 text-white">
+				<h1 class="text-xl font-bold">Napíšte nám</h1>
+				<p>
+					V prípade akýchkoľvek otázok nás neváhajte kontaktovať na
+					jednom z uvedených linkov.
+				</p>
 			</div>
-			<div class="w-1/2 mx-24">
-				<div>
-					<ContactItem
-						v-for="(item, index) in items"
-						:key="index"
-						:text="item.text"
-						:icon="item.icon"
-						:link="item.link"
-					>
-					</ContactItem>
-				</div>
+		</div>
+		<div class="w-1/2 ml-10">
+			<div>
+				<ContactItem
+					v-for="(item, index) in items"
+					:key="index"
+					:text="item.text"
+					:icon="item.icon"
+					:link="item.link"
+				/>
 			</div>
 		</div>
 	</div>
@@ -54,3 +51,9 @@ export default {
 	}
 };
 </script>
+
+<style lang="scss">
+.skewed-wrapper {
+	clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+}
+</style>
