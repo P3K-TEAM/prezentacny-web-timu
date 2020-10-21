@@ -1,6 +1,9 @@
 module.exports = {
 	theme: {
 		extend: {
+			borderWidth: {
+				3: '3px',
+			},
 			colors: {
 				primary: '#17CDC4',
 				accent: '#6CD0C7',
@@ -26,7 +29,7 @@ module.exports = {
 		}
 	},
 	variants: {
-		borderWidth: ['group-hover'],
+		borderWidth: ['group-hover']
 	},
 	plugins: []
 };

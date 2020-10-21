@@ -1,7 +1,7 @@
 <template>
 	<div
-		class="tab border-primary"
-		:class="{ 'border-b-2': active }"
+		class="tab inline-block border-primary pt-3 pb-2 text-gray-500 px-2 cursor-pointer hover:text-gray-600"
+		:class="{ 'border-b-3': active }"
 	>
 		{{ title }}
 	</div>
@@ -21,3 +21,14 @@ export default {
 	}
 };
 </script>
+
+<style lang="scss">
+.tab {
+	@apply mr-4;
+	margin-bottom:-2px;
+
+	&:first-child {
+		@apply ml-4;
+	}
+}
+</style>

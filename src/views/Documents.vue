@@ -4,16 +4,16 @@
 			<h1 class="text-2xl font-bold mb-4">
 				Dokumenty
 			</h1>
-			<div>
-				<DocumentTab
-					v-for="tab in Object.keys(documents)"
-					:key="tab"
-					:title="tab"
-					:active="tab === selectedTab"
-					@click.native="selectedTab = tab"
-				/>
-			</div>
 			<div class="bg-white rounded shadow">
+				<div class="border-b-2 border-gray-300">
+					<DocumentTab
+						v-for="tab in Object.keys(documents)"
+						:key="tab"
+						:title="tab"
+						:active="tab === selectedTab"
+						@click.native="selectedTab = tab"
+					/>
+				</div>
 				<DocumentItem
 					v-for="document in documents[selectedTab]"
 					:key="document.name"
