@@ -17,6 +17,7 @@
 						:key="index"
 						:text="item.text"
 						:icon="item.icon"
+						:link="item.link"
 					>
 					</ContactItem>
 				</div>
@@ -36,16 +37,17 @@ export default {
 		return {
 			items: [
 				{
+					icon: 'far fa-envelope',
 					text: 'tim10fiit@googlegroups.com',
-					icon: 'far fa-envelope'
+					link: 'mailto:tim10fiit@googlegroups.com'
 				},
 				{
-					text:
-						'Fakulta informatiky a informačných technologií' +
-						'Slovenská Technická Univerzita v Bratislave' +
-						'Iľkovičova 2' +
-						'842 16 Bratislava',
-					icon: 'fas fa-map-marker-alt'
+					icon: 'fas fa-map-marker-alt',
+					text: `Fakulta informatiky a informačných technologií<br>
+						   Slovenská Technická Univerzita v Bratislave<br>
+						   Iľkovičova 2<br>
+						   842 16 Bratislava`,
+					link: 'https://goo.gl/maps/UP19hKHWFhYcea9q8'
 				}
 			]
 		};
