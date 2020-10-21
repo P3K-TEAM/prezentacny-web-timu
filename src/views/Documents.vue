@@ -21,6 +21,12 @@
 					:date="document.date"
 					:link="document.link"
 				/>
+				<div
+					v-if="documents && selectedTab && !documents[selectedTab].length"
+					class="text-gray-500 px-4 py-3"
+				>
+					Ospravedlňujeme sa, v danej kategórií nie sú k dispozícií žiadne dokumenty.
+				</div>
 			</div>
 		</div>
 	</div>
@@ -37,7 +43,7 @@ export default {
 	},
 	data: function() {
 		return {
-			selectedTab: 'Zápisnice',
+			selectedTab: '',
 			documents: {
 				'Zápisnice': [
 					{
@@ -83,6 +89,9 @@ export default {
 				]
 			}
 		};
+	},
+	mounted() {
+		this.selectedTab = Object.keys(this.documents)[0];
 	}
 };
 </script>
