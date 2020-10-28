@@ -13,4 +13,4 @@ class HomePageObject {
 	}
 }
 
-module.exports = HomePageObject;
+module.exports = { HomePageObject };
