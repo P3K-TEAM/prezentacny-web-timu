@@ -1,5 +1,5 @@
 <template>
-	<nav>
+	<nav data-e2e-id="navigation">
 		<div class="container flex mx-auto py-6">
 			<router-link
 				to="/"
