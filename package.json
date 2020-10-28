@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "node scripts/start-web-server.js --port 8080",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint 'src/**' 'cypress/**'",
     "cypress:open": "node scripts/run-cypress-tests.js open --config \"{baseUrl:'http://localhost:8080'}\"",
     "c:o": "npm run cypress:open"
   },
@@ -27,6 +27,7 @@
     "cypress": "^5.5.0",
     "detect-port": "^1.3.0",
     "eslint": "^6.8.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-prettier-vue": "^2.1.1",
     "eslint-plugin-vue": "^6.2.2",
