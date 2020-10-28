@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Person from '../components/Person';
+import Person from '@/components/Person/Person';
 
 export default {
 	components: {
