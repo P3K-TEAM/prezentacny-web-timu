@@ -33,7 +33,7 @@ export default {
 				{ url: '/team', text: 'Tím' },
 				{ url: '/documents', text: 'Dokumenty' },
 				{ url: '/contact', text: 'Kontakt' }
-			]
+	]
 		};
 	}
 };
