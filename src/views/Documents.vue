@@ -1,5 +1,8 @@
 <template>
-	<div class="bg-gray-200">
+	<div
+		class="bg-gray-200"
+		data-e2e-id="documentsPage"
+	>
 		<div class="container mx-auto mt-10">
 			<h1 class="text-2xl font-bold mb-4">
 				Dokumenty
@@ -25,7 +28,8 @@
 					v-if="documents && selectedTab && !documents[selectedTab].length"
 					class="text-gray-500 px-4 py-3"
 				>
-					Ospravedlňujeme sa, v danej kategórií nie sú k dispozícií žiadne dokumenty.
+					Ospravedlňujeme sa, v danej kategórií nie sú k dispozícií
+					žiadne dokumenty.
 				</div>
 			</div>
 		</div>

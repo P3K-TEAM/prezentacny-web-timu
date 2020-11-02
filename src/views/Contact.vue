@@ -1,8 +1,13 @@
 <template>
-	<div class="bg-gray-100 flex items-center">
+	<div
+		class="bg-gray-100 flex items-center"
+		data-e2e-id="contactPage"
+	>
 		<div class="flex justify-center w-1/2 bg-primary py-32 skewed-wrapper">
 			<div class="w-3/5 text-white">
-				<h1 class="text-xl font-bold">Napíšte nám</h1>
+				<h1 class="text-xl font-bold">
+					Napíšte nám
+				</h1>
 				<p>
 					V prípade akýchkoľvek otázok nás neváhajte kontaktovať na
 					jednom z uvedených linkov.
@@ -10,15 +15,13 @@
 			</div>
 		</div>
 		<div class="w-1/2 ml-10">
-			<div>
-				<ContactItem
-					v-for="(item, index) in items"
-					:key="index"
-					:text="item.text"
-					:icon="item.icon"
-					:link="item.link"
-				/>
-			</div>
+			<ContactItem
+				v-for="(item, index) in items"
+				:key="index"
+				:text="item.text"
+				:icon="item.icon"
+				:link="item.link"
+			/>
 		</div>
 	</div>
 </template>

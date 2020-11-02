@@ -1,5 +1,8 @@
 <template>
-	<div class="flex items-center contact-item">
+	<div
+		class="flex items-center contact-item"
+		data-e2e-id="contactItem"
+	>
 		<div
 			class="flex flex-shrink-0 justify-center items-center w-12 h-12 bg-white rounded-full shadow"
 		>

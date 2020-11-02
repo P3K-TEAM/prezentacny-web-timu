@@ -1,5 +1,8 @@
 <template>
-	<div class="bg-gray-100">
+	<div
+		class="bg-gray-100"
+		data-e2e-id="teamPage"
+	>
 		<div class="container flex flex-wrap mx-auto mb-24">
 			<Person
 				v-for="(person, index) in persons"
@@ -7,8 +10,7 @@
 				:description="person.description"
 				:name="person.name"
 				:image="person.image"
-			>
-			</Person>
+			/>
 		</div>
 	</div>
 </template>
@@ -22,7 +24,6 @@ export default {
 	},
 	data: function() {
 		return {
-			message: 'It works from variable as well!',
 			persons: [
 				{
 					name: 'Ing. Juraj Petrík',

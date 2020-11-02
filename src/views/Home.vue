@@ -1,8 +1,13 @@
 <template>
-	<div class="bg-primary">
+	<div
+		class="bg-primary"
+		data-e2e-id="homePage"
+	>
 		<div class="flex bg-gray-100 py-48 skewed-bottom-wrapper">
 			<div class="flex flex-col w-1/2 justify-center items-center">
-				<h1 class="font-bold text-6xl">AntiPlag</h1>
+				<h1 class="font-bold text-6xl">
+					AntiPlag
+				</h1>
 				<span class="text-primary text-xl font-bold uppercase">
 					Nedajte si svoj nápad uje***!
 				</span>
@@ -13,7 +18,7 @@
 					xmlns="http://www.w3.org/2000/svg"
 					class="mr-64"
 					width="300"
-					height="auto"
+					height="100%"
 					viewBox="0 0 540 540"
 				>
 					<path
@@ -240,7 +245,10 @@
 			</div>
 		</div>
 
-		<div class="container mx-auto text-white py-32 text-justify">
+		<div
+			class="container mx-auto text-white py-32 text-justify"
+			data-e2e-id="homePageAboutProject"
+		>
 			<h2 class="text-3xl font-bold ">
 				O Projekte
 			</h2>

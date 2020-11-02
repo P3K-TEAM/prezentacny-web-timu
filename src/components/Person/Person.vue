@@ -1,15 +1,21 @@
 <template>
-	<div class="w-1/4 flex flex-col justify-end mt-48">
+	<div
+		class="w-1/4 flex flex-col justify-end mt-48"
+		data-e2e-id="person"
+	>
 		<div class="flex relative items-end">
 			<img
 				class="w-auto absolute person-image"
 				:src="image"
 				:alt="name"
-			/>
-			<div class="h-32 w-full bg-primary"></div>
+			>
+			<div class="h-32 w-full bg-primary" />
 		</div>
 		<div class="bg-cyan-100 py-4 text-center">
-			<strong class="text-primary text-xl">
+			<strong
+				class="text-primary text-xl"
+				data-e2e-id="personName"
+			>
 				{{ name }}
 			</strong>
 			<div
