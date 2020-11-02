@@ -1,7 +1,9 @@
 {
+	"integrationFolder": "tests/e2e/integration",
 	"testFiles": "**/*.e2e.js",
-	"screenshotsFolder": "artifacts/screenshots",
-	"videosFolder": "artifacts/videos",
+	"pluginsFile": "tests/e2e/plugins/index.js",
+	"screenshotsFolder": "tests/e2e/artifacts/screenshots",
+	"videosFolder": "tests/e2e/artifacts/videos",
 	"chromeWebSecurity": false,
 	"video": true,
 	"videoUploadOnPasses": false,
