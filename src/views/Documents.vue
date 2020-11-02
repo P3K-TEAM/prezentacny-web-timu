@@ -1,5 +1,8 @@
 <template>
-	<div class="bg-gray-200" data-e2e-id="documentsPage">
+	<div
+		class="bg-gray-200"
+		data-e2e-id="documentsPage"
+	>
 		<div class="container mx-auto mt-10">
 			<h1 class="text-2xl font-bold mb-4">
 				Dokumenty
@@ -22,11 +25,7 @@
 					:link="document.link"
 				/>
 				<div
-					v-if="
-						documents &&
-							selectedTab &&
-							!documents[selectedTab].length
-					"
+					v-if="documents && selectedTab && !documents[selectedTab].length"
 					class="text-gray-500 px-4 py-3"
 				>
 					Ospravedlňujeme sa, v danej kategórií nie sú k dispozícií
@@ -50,7 +49,7 @@ export default {
 		return {
 			selectedTab: '',
 			documents: {
-				Zápisnice: [
+				'Zápisnice': [
 					{
 						name: 'zapisnica_1.pdf',
 						date: '08.10.2020',
@@ -67,7 +66,7 @@ export default {
 						link: '/download/zapisnica_3.pdf'
 					}
 				],
-				Retrospektívy: [
+				'Retrospektívy': [
 					{
 						name: 'sprint_0_retro.pdf',
 						date: '22.10.2020',
@@ -75,7 +74,7 @@ export default {
 					}
 				],
 				'Exporty úloh': [],
-				Metodiky: [
+				'Metodiky': [
 					{
 						name: 'metodika-vue.pdf',
 						date: '21.10.2020',

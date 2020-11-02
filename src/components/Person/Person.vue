@@ -8,8 +8,8 @@
 				class="w-auto absolute person-image"
 				:src="image"
 				:alt="name"
-			/>
-			<div class="h-32 w-full bg-primary"></div>
+			>
+			<div class="h-32 w-full bg-primary" />
 		</div>
 		<div class="bg-cyan-100 py-4 text-center">
 			<strong

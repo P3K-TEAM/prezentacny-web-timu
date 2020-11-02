@@ -5,7 +5,9 @@
 	>
 		<div class="flex justify-center w-1/2 bg-primary py-32 skewed-wrapper">
 			<div class="w-3/5 text-white">
-				<h1 class="text-xl font-bold">Napíšte nám</h1>
+				<h1 class="text-xl font-bold">
+					Napíšte nám
+				</h1>
 				<p>
 					V prípade akýchkoľvek otázok nás neváhajte kontaktovať na
 					jednom z uvedených linkov.
