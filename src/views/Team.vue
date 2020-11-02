@@ -27,42 +27,42 @@ export default {
 				{
 					name: 'Ing. Juraj Petrík',
 					description: 'Vedúci tímu, Product Owner',
-					image: 'edited/juraj-petrik.png'
+					image: 'img/edited/juraj-petrik.png'
 				},
 				{
 					name: 'Bc. Karin Maliniaková',
 					description: 'Scrum Master, Frontend developer, UX',
-					image: 'edited/karin-maliniakova.png'
+					image: 'img/edited/karin-maliniakova.png'
 				},
 				{
 					name: 'Bc. František Gič',
 					description: 'Frontend developer, GitMaster, UX',
-					image: 'edited/frantisek-gic.png'
+					image: 'img/edited/frantisek-gic.png'
 				},
 				{
 					name: 'Bc. Vladimír Svitok',
 					description: 'Backend developer',
-					image: 'edited/vladimir-svitok.png'
+					image: 'img/edited/vladimir-svitok.png'
 				},
 				{
 					name: 'Bc. Anton Rusňák',
 					description: 'Backend developer, NLP',
-					image: 'edited/anton-rusnak.png'
+					image: 'img/edited/anton-rusnak.png'
 				},
 				{
 					name: 'Bc. Denisa Mensatorisová',
 					description: 'Backend developer, UX',
-					image: 'edited/denisa-mensatorisova.png'
+					image: 'img/edited/denisa-mensatorisova.png'
 				},
 				{
 					name: 'Bc. Kristián Toldy',
 					description: 'Backend developer, Tester',
-					image: 'edited/kristian-toldy.png'
+					image: 'img/edited/kristian-toldy.png'
 				},
 				{
 					name: 'Bc. Oliver Kanát',
 					description: 'Backend developer, NLP',
-					image: 'edited/oliver-kanat.png'
+					image: 'img/edited/oliver-kanat.png'
 				}
 			]
 		};
