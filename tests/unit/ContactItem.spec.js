@@ -20,7 +20,6 @@ describe('ContactItem Component', function() {
 	});
 
 	it('should render paragraph if link is not provided', function() {
-		//render component
 		const wrapper = mount(ContactItem, {
 			propsData: {
 				text: 'Toto je text',
