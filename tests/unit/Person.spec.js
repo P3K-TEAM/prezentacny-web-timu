@@ -3,8 +3,7 @@ import Person from '../../src/components/Person/Person';
 import { expect } from 'chai';
 
 describe('Person Component', function() {
-	it('render info for person component', function() {
-		//render component
+	it('Render info for person component', function() {
 		const wrapper = mount(Person, {
 			propsData: {
 				name: 'Ing. Juraj Petrík',
@@ -18,6 +17,5 @@ describe('Person Component', function() {
 			'Vedúci tímu, Product Owner',
 			'edited/juraj-petrik.png'
 		);
-
 	});
 });
