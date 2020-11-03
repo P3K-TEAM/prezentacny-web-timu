@@ -6,10 +6,12 @@
     "serve": "node scripts/start-web-server.js --port 8080",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:e2e": "node scripts/run-cypress-tests.js open --config \"{baseUrl:'http://localhost:8080'}\""
+    "test:e2e": "node scripts/run-cypress-tests.js open --config \"{baseUrl:'http://localhost:8080'}\"",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
+    "@vue/test-utils": "^1.1.1",
     "core-js": "^3.6.5",
     "tailwindcss": "^1.9.1",
     "vue": "^2.6.11",
@@ -20,9 +22,11 @@
     "@vue/cli-plugin-e2e-cypress": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-mocha": "^4.5.8",
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
+    "chai": "^4.2.0",
     "chalk": "^4.1.0",
     "cypress": "^5.5.0",
     "eslint": "^6.8.0",
@@ -30,6 +34,7 @@
     "eslint-plugin-prettier-vue": "^2.1.1",
     "eslint-plugin-vue": "^6.2.2",
     "lodash": "^4.17.20",
+    "mocha": "^8.2.0",
     "node-fetch": "^2.6.1",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
