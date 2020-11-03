@@ -3,7 +3,7 @@ import DocumentItem from '../../src/components/Document/DocumentItem';
 import { expect } from 'chai';
 
 describe('DocumentItem Component', function() {
-	it('Render info for DocumentItem', function() {
+	it('should render passed props ', function() {
 		const data = {
 			name: 'zapisnica_1.pdf',
 			date: '08.10.2020',

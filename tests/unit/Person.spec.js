@@ -3,7 +3,7 @@ import Person from '../../src/components/Person/Person';
 import { expect } from 'chai';
 
 describe('Person Component', function() {
-	it('Render info for person component', function() {
+	it('should render passed props', function() {
 		const data = {
 			name: 'Ing. Juraj Petrík',
 			description: 'Vedúci tímu, Product Owner',
