@@ -4,18 +4,15 @@ import { expect } from 'chai';
 
 describe('Person Component', function() {
 	it('Render info for person component', function() {
+		const data = {
+			name: 'Ing. Juraj Petrík',
+			description: 'Vedúci tímu, Product Owner',
+			image: 'edited/juraj-petrik.png'
+		};
 		const wrapper = mount(Person, {
-			propsData: {
-				name: 'Ing. Juraj Petrík',
-				description: 'Vedúci tímu, Product Owner',
-				image: 'edited/juraj-petrik.png'
-			}
+			propsData: data
 		});
 
-		expect(wrapper.text()).to.contain(
-			'Ing. Juraj Petrík',
-			'Vedúci tímu, Product Owner',
-			'edited/juraj-petrik.png'
-		);
+		expect(wrapper.text()).to.contain(...Object.values(data));
 	});
 });
