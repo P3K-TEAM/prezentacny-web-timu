@@ -10,12 +10,11 @@ Vue.use(VueRouter);
 const routes = [
 	{
 		path: '/',
-		name: 'Home',
 		component: Home
 	},
 	{
 		path: '/team',
-		name: 'Tim',
+		name: 'Tím',
 		component: Team
 	},
 	{
