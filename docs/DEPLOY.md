@@ -1,6 +1,6 @@
 
 ## Deploy
-Deployment of team web on [team10-20.studenti.fiit.stuba.sk](team10-20.studenti.fiit.stuba.sk).
+Deployment of team web on [team10-20.studenti.fiit.stuba.sk](https://team10-20.studenti.fiit.stuba.sk).
 
 #### Steps
 1. Build the app locally:
@@ -8,7 +8,7 @@ Deployment of team web on [team10-20.studenti.fiit.stuba.sk](team10-20.studenti.
 	```shell script
 	npm run build
 	```
-	This creates /dist folder which content is uploaded on server. 
+	This creates `/dist` folder which content is uploaded on server. 
 
 1. Connect to server using ssh:
 
@@ -31,7 +31,7 @@ Deployment of team web on [team10-20.studenti.fiit.stuba.sk](team10-20.studenti.
     
 	-> Connect -> enter password.
 
-1. Upload the content of the /dist folder to /var/www/teamweb/html folder on server side. To upload files you need to select them on the left screen, right click the selected files and folders and click Upload or just drag and drop files between the two windows.
+1. Upload the content of the `/dist` folder to `/var/www/teamweb/html` folder on server side. To upload files you need to select them on the left screen, right click the selected files and folders and click `Upload` or just drag and drop files between the two windows.
 
 1. Visit the [Team web](https://team10-20.studenti.fiit.stuba.sk) to check whether the upload was successful.
 
