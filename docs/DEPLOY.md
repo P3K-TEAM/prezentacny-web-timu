@@ -1,6 +1,6 @@
 
 ## Deploy
-Deployment of team web on team10-20.studenti.fiit.stuba.sk.
+Deployment of team web on [team10-20.studenti.fiit.stuba.sk](team10-20.studenti.fiit.stuba.sk).
 
 #### Steps
 1. Build the app locally:
@@ -15,8 +15,9 @@ Deployment of team web on team10-20.studenti.fiit.stuba.sk.
 	```shell script
 	ssh -i team10.key ubuntu@team10-20.studenti.fiit.stuba.sk
 	```
+	You can download private key (team10.key) from [Team web drive](https://drive.google.com/drive/folders/1_2V0B3b30o_aSnExcWm1lQqQ4STs3GjO).
 
-1. Setup sftp server in FileZilla via File -> Site Manager -> New site:
+1. Setup a connection to sftp server in SFTP Client. If you're using FileZilla, select File -> Site Manager -> New site and fill in following fields:
 
     Protocol: sftp
 
@@ -26,28 +27,11 @@ Deployment of team web on team10-20.studenti.fiit.stuba.sk.
     
 	User: ubuntu
     
-	Key file: the key needs to be converted into a supported format (team10key.ppk)
+	Key file: you need to convert the key into a supported format (team10key.ppk), FileZilla does the convertion, so you just need to select the new converted key (team10key.ppk)
     
 	-> Connect -> enter password.
 
-1. Upload files from /dist folder to /var/www/teamweb folder
+1. Upload the content of the /dist folder to /var/www/teamweb/html folder on server side. To upload files you need to select them on the left screen, right click the selected files and folders and click Upload or just drag and drop files between the two windows.
 
-    Ubuntu user doesn't have permission to access this folder and accessing via Root user doesn't work:
-	```shell script
-	Error:	FATAL ERROR: Received unexpected end-of-file from SFTP server
-	Error:	Could not connect to server
-	```
-1. Since only root has access to the /var/www folder, we need to add the Ubuntu user to a group that has permission to access this folder.
-	Use commands:
-	
-	```shell script
-	sudo su
-	usermod -a -G root ubuntu
-	```
-
-1. Now, it's possible to upload files via ubuntu user.
-
-1. The content of the /dist folder is uploaded to /var/www/teamweb/html folder on server side. To upload files you need to select them on the left screen, right click the selected files and folders and click Upload or just drag and drop files between the two windows.
-
-1. Team web is deployed on team10-20.studenti.fiit.stuba.sk.
+1. Visit the [Team web](https://team10-20.studenti.fiit.stuba.sk) to check whether the upload was successful.
 
