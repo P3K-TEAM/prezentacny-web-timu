@@ -1,5 +1,5 @@
 <template>
-	<li class="inline-block font-bold uppercase text-md hover:text-accent">
+	<li class="block sm:inline-block font-bold uppercase text-md hover:text-accent">
 		<router-link
 			:to="url"
 			data-e2e-id="navigationItem"

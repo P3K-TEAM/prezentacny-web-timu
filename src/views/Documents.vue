@@ -3,7 +3,7 @@
 		class="bg-gray-200"
 		data-e2e-id="documentsPage"
 	>
-		<div class="container mx-auto mt-10">
+		<div class="sm:px-auto px-8 container mx-auto mt-10">
 			<h1 class="text-2xl font-bold mb-4">
 				Dokumenty
 			</h1>
