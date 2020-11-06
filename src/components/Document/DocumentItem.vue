@@ -13,6 +13,7 @@
 			<a
 				:href="link"
 				class="bg-primary rounded text-white font-bold py-1 px-2 ml-auto invisible group-hover:visible"
+				target="_blank"
 				data-e2e-id="documentItemDownloadButton"
 			>
 				<span class="mr-2">Stiahnuť</span>
