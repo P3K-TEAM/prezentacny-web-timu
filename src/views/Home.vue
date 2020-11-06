@@ -3,8 +3,8 @@
 		class="bg-primary"
 		data-e2e-id="homePage"
 	>
-		<div class="flex bg-gray-100 py-48 skewed-bottom-wrapper">
-			<div class="flex flex-col w-1/2 justify-center items-center">
+		<div class="block lg:flex bg-gray-100 py-48 skewed-bottom-wrapper">
+			<div class="flex flex-col lg:w-1/2 justify-center items-center">
 				<h1 class="font-bold text-6xl">
 					AntiPlag
 				</h1>
@@ -12,7 +12,7 @@
 					Nedajte si svoj nápad uje***!
 				</span>
 			</div>
-			<div class="flex w-1/2 justify-center">
+			<div class="hidden lg:flex w-1/2 justify-center">
 				<svg
 					version="1.1"
 					xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +246,7 @@
 		</div>
 
 		<div
-			class="container mx-auto text-white py-32 text-justify"
+			class="sm:px-auto px-8 container mx-auto text-white py-32 text-justify"
 			data-e2e-id="homePageAboutProject"
 		>
 			<h2 class="text-3xl font-bold ">

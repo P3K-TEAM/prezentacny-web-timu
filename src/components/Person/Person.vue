@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="w-1/4 flex flex-col justify-end mt-48"
+		class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col justify-end mt-48"
 		data-e2e-id="person"
 	>
 		<div class="flex relative items-end">
