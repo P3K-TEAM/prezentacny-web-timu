@@ -29,8 +29,6 @@ export default {
 	@apply mr-4;
 	margin-bottom: -2px;
 
-	&:first-child {
-		@apply ml-4;
-	}
+	
 }
 </style>

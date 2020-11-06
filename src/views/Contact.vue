@@ -56,7 +56,10 @@ export default {
 </script>
 
 <style lang="scss">
+@media only screen and (min-width:640px){
 .skewed-wrapper {
 	clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-}
+	min-width: 640px;
+}}
+
 </style>

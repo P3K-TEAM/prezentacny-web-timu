@@ -5,7 +5,7 @@
 	>
 		<div class="block lg:flex bg-gray-100 py-48 skewed-bottom-wrapper">
 			<div class="flex flex-col lg:w-1/2 justify-center items-center">
-				<h1 class="font-bold text-6xl">
+				<h1 class="font-bold text-6xl ">
 					AntiPlag
 				</h1>
 				<span class="text-primary text-xl font-bold uppercase">
