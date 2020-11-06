@@ -4,9 +4,9 @@
 		data-e2e-id="contactItem"
 	>
 		<div
-			class="flex flex-shrink-0 justify-center items-center w-12 h-12 bg-white rounded-full shadow"
+			class="flex flex-shrink-0 justify-center items-center w-8 h-8 lg:w-12 lg:h-12 bg-white rounded-full shadow"
 		>
-			<i :class="icon" class="fa-2x text-primary" />
+			<i :class="icon" class="text-xl lg:text-2xl text-primary" />
 		</div>
 		<div
 			class="ml-5 content-center"
