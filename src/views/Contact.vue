@@ -1,9 +1,9 @@
 <template>
 	<div
-		class="bg-gray-100 flex items-center"
+		class="bg-gray-100 sm:block md:flex items-center"
 		data-e2e-id="contactPage"
 	>
-		<div class="flex justify-center w-1/2 bg-primary py-32 skewed-wrapper">
+		<div class="flex justify-center sm:w-auto md:w-1/2 bg-primary py-32 skewed-wrapper">
 			<div class="w-3/5 text-white">
 				<h1 class="text-xl font-bold">
 					Napíšte nám
@@ -14,7 +14,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="w-1/2 ml-10">
+		<div class="sm:pt-auto pt-8 ml-10">
 			<ContactItem
 				v-for="(item, index) in items"
 				:key="index"
