@@ -49,46 +49,37 @@ export default {
 		return {
 			selectedTab: '',
 			documents: {
-				'Zápisnice': [
-					{
-						name: 'zapisnica_1.pdf',
-						date: '08.10.2020',
-						link: '/download/zapisnica_1.pdf'
-					},
-					{
-						name: 'zapisnica_2.pdf',
-						date: '11.10.2020',
-						link: '/download/zapisnica_2.pdf'
-					},
-					{
-						name: 'zapisnica_3.pdf',
-						date: '21.10.2020',
-						link: '/download/zapisnica_3.pdf'
-					}
-				],
-				'Retrospektívy': [
-					{
-						name: 'sprint_0_retro.pdf',
-						date: '22.10.2020',
-						link: '/download/sprint_0_retro.pdf'
-					}
-				],
+				'Zápisnice': [],
+				'Retrospektívy': [],
 				'Exporty úloh': [],
 				'Metodiky': [
 					{
-						name: 'metodika-vue.pdf',
+						name: 'Definition of Done',
 						date: '21.10.2020',
-						link: '/download/metodika-vue.pdf'
+						link:
+							'/download/metodiky/metodika-definition-of-done.pdf'
 					},
 					{
-						name: 'metodika-git.pdf',
-						date: '19.10.2020',
-						link: '/download/metodika-.pdf'
+						name: 'Definition of Ready',
+						date: '21.10.2020',
+						link:
+							'/download/metodiky/metodika-definition-of-ready.pdf'
 					},
 					{
-						name: 'metodika-django.pdf',
-						date: '16.10.2020',
-						link: '/download/metodika-django.pdf'
+						name: 'Komunikácia v tíme',
+						date: '21.10.2020',
+						link:
+							'/download/metodiky/metodika-komunikacie-v-time.pdf'
+					},
+					{
+						name: 'Písanie a zmena metodík',
+						date: '21.10.2020',
+						link: '/download/metodiky/metodika-pisania-metodik.pdf'
+					},
+					{
+						name: 'Verziovanie zdrojového kódu',
+						date: '5.11.2020',
+						link: '/download/metodiky/metodika-git.pdf'
 					}
 				]
 			}
