@@ -3,12 +3,12 @@
 		class="bg-primary"
 		data-e2e-id="homePage"
 	>
-		<div class="block lg:flex bg-gray-100 py-48 skewed-bottom-wrapper">
+		<div class="block lg:flex bg-gray-100 py-20 lg:py-48 skewed-bottom-wrapper">
 			<div class="flex flex-col lg:w-1/2 justify-center items-center">
-				<h1 class="font-bold text-6xl ">
-					AntiPlag
+				<h1 class="font-bold text-5xl md:text-6xl ">
+					AntiPlag!
 				</h1>
-				<span class="text-primary text-xl font-bold uppercase">
+				<span class="text-primary text-base md:text-xl font-bold uppercase">
 					Nedajte si svoj nápad uje***!
 				</span>
 			</div>
@@ -246,7 +246,7 @@
 		</div>
 
 		<div
-			class="sm:px-auto px-8 container mx-auto text-white py-32 text-justify"
+			class="sm:px-auto px-8 container mx-auto text-white py-16 lg:py-32 text-justify"
 			data-e2e-id="homePageAboutProject"
 		>
 			<h2 class="text-3xl font-bold ">
