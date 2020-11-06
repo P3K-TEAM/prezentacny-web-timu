@@ -3,13 +3,13 @@
 		class="document-item border-grey-300 py-3 px-4 group hover:bg-gray-100"
 		data-e2e-id="documentItem"
 	>
-		<span class="inline-block w-1/4">
+		<span class="inline-block md:w-1/4 w-1/2">
 			{{ name }}
 		</span>
-		<span class="inline-block w-2/4 text-right">
+		<span class="md:inline-block hidden w-2/4 text-right">
 			{{ date }}
 		</span>
-		<div class="inline-block w-1/4 text-right">
+		<div class="inline-block w-1/2 md:w-1/4 text-right">
 			<a
 				:href="link"
 				class="bg-primary rounded text-white font-bold py-1 px-2 ml-auto invisible group-hover:visible"
