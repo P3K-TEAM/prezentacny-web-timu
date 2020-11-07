@@ -2,6 +2,8 @@
 node_modules
 /dist
 
+# cypress artifacts
+tests/e2e/artifacts
 
 # local env files
 .env.local
