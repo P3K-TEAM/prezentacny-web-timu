@@ -13,7 +13,7 @@ async function main() {
 
 	exec(
 		'vue-cli-service serve',
-		{ stdio: 'inherit' },
+		{ stdio: 'inherit', maxBuffer: 1024 * 1024 * 10 },
 		(error, stdout, stderr) => {
 			if (error) {
 				console.error(chalk.red(error));
