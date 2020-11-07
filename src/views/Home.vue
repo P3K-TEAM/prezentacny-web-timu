@@ -1,14 +1,15 @@
 <template>
-	<div
-		class="bg-primary"
-		data-e2e-id="homePage"
-	>
-		<div class="block lg:flex bg-gray-100 py-20 lg:py-48 skewed-bottom-wrapper">
+	<div class="bg-primary" data-e2e-id="homePage">
+		<div
+			class="flex flex-col lg:flex-row justify-center bg-gray-100 py-20 lg:p-48 skewed-bottom-wrapper"
+		>
 			<div class="flex flex-col lg:w-1/2 justify-center items-center">
 				<h1 class="font-bold text-5xl md:text-6xl ">
 					AntiPlag!
 				</h1>
-				<span class="text-primary text-base md:text-xl font-bold uppercase">
+				<span
+					class="text-primary md:text-xl font-bold uppercase"
+				>
 					Nedajte si svoj nápad uje***!
 				</span>
 			</div>
@@ -16,7 +17,6 @@
 				<svg
 					version="1.1"
 					xmlns="http://www.w3.org/2000/svg"
-					class="mr-64"
 					width="300"
 					height="100%"
 					viewBox="0 0 540 540"
@@ -246,7 +246,7 @@
 		</div>
 
 		<div
-			class="sm:px-auto px-8 container mx-auto text-white py-16 lg:py-32 text-justify"
+			class="container px-8 lg:px-0 py-16 xl:py-24 mx-auto text-justify text-white"
 			data-e2e-id="homePageAboutProject"
 		>
 			<h2 class="text-3xl font-bold ">

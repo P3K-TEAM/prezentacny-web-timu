@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col justify-end mt-48"
+		class="flex flex-col w-full sm:w-1/2 lg:w-1/4 justify-end px-10 sm:px-0 mt-20 sm:mt-48"
 		data-e2e-id="person"
 	>
 		<div class="flex relative items-end">
@@ -9,7 +9,7 @@
 				:src="image"
 				:alt="name"
 			>
-			<div class="h-32 w-full bg-primary" />
+			<div class="h-64 sm:h-32 w-full bg-primary" />
 		</div>
 		<div class="bg-cyan-100 py-4 text-center">
 			<strong
@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .person-image {
 	bottom: 0;
 	left: 0;

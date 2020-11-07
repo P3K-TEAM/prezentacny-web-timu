@@ -8,7 +8,7 @@
 				Dokumenty
 			</h1>
 			<div class="bg-white rounded shadow">
-				<div class="border-b-2 border-gray-300">
+				<div class="border-b-2 border-gray-300 flex overflow-x-auto overflow-y-hidden">
 					<DocumentTab
 						v-for="tab in Object.keys(documents)"
 						:key="tab"

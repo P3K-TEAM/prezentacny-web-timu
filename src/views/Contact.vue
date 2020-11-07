@@ -3,7 +3,9 @@
 		class="bg-gray-100 flex flex-col lg:flex-row items-center"
 		data-e2e-id="contactPage"
 	>
-		<div class="flex justify-center w-full lg:w-1/2 bg-primary py-20 lg:py-32 skewed-wrapper">
+		<div
+			class="flex justify-center w-full lg:w-1/2 bg-primary py-20 lg:py-32 skewed-wrapper"
+		>
 			<div class="w-4/5 lg:w-3/5 text-white">
 				<h1 class="text-4xl lg:text-2xl font-bold">
 					Napíšte nám
@@ -55,11 +57,11 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@media only screen and (min-width:1024px){
-.skewed-wrapper {
-	clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-	min-width: 640px;
-}}
-
+<style scoped>
+@media only screen and (min-width: 1024px) {
+	.skewed-wrapper {
+		clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+		min-width: 640px;
+	}
+}
 </style>

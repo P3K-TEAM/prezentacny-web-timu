@@ -1,22 +1,22 @@
 <template>
 	<div
-		class="document-item border-grey-300 py-3 px-4 group hover:bg-gray-100"
+		class="document-item border-grey-300 py-3 px-4 group hover:bg-gray-100 flex items-center"
 		data-e2e-id="documentItem"
 	>
-		<span class="inline-block md:w-1/4 w-1/2">
+		<span class="inline-block md:w-1/4 w-3/4">
 			{{ name }}
 		</span>
-		<span class="md:inline-block hidden w-2/4 text-right">
+		<span class="hidden md:inline-block w-2/4 text-right">
 			{{ date }}
 		</span>
-		<div class="inline-block w-1/2 md:w-1/4 text-right">
+		<div class="inline-block w-1/4 md:w-1/4 text-right">
 			<a
 				:href="link"
-				class="bg-primary rounded text-white font-bold py-1 px-2 ml-auto invisible group-hover:visible"
+				class="bg-primary rounded text-white font-bold py-2 px-3 md:px-2 ml-auto invisible group-hover:visible"
 				target="_blank"
 				data-e2e-id="documentItemDownloadButton"
 			>
-				<span class="mr-2">Stiahnuť</span>
+				<span class="mr-2 hidden sm:inline">Stiahnuť</span>
 				<i class="fas fa-download" />
 			</a>
 		</div>
@@ -33,7 +33,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .document-item:not(:last-child) {
 	@apply border-b-2;
 }
