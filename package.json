@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "node scripts/start-web-server.js --port 8080",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint",
     "test:e2e": "node scripts/run-cypress-tests.js open --config \"{baseUrl:'http://localhost:8080'}\"",
     "test:unit": "vue-cli-service test:unit"
