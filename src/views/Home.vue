@@ -283,7 +283,7 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style scoped>
 .skewed-bottom-wrapper {
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 88%);
 }

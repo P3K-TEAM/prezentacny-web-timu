@@ -1,7 +1,7 @@
 <template>
 	<div id="app" class="flex flex-col h-full">
 		<Navigation />
-		<router-view class="flex-auto" />
+		<router-view class="flex-auto mt-20" />
 		<Footer />
 	</div>
 </template>
@@ -17,18 +17,3 @@ export default {
 	}
 };
 </script>
-
-<style lang="scss">
-#app {
-	font-family: Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: #2c3e50;
-}
-
-html,
-body {
-	height: 100%;
-	margin: 0;
-}
-</style>

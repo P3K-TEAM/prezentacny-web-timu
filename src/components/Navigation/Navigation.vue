@@ -1,54 +1,56 @@
 <template>
-	<nav data-e2e-id="navigation">
-		<header
-			class="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3"
+	<nav
+		data-e2e-id="navigation"
+		class="absolute w-full py-6 bg-white z-10 shadow-sm"
+	>
+		<div
+			class="w-full md:container mx-auto flex md:flex-row justify-between items-center"
+			:class="isOpen ? 'flex-col' : 'flex-row'"
 		>
-			<div class="flex items-center justify-between px-4 py-3 sm:p-0">
-				<div>
-					<router-link
-						to="/"
-						class="text-primary text-2xl font-bold flex flex-shrink-0"
-					>
-						P3K Team
-					</router-link>
-				</div>
-				<div class="sm:hidden">
-					<button
-						@click="isOpen = !isOpen"
-						type="button"
-						class="block focus:outline-none"
-					>
-						<svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-							<path
-								v-if="isOpen"
-								fill-rule="evenodd"
-								d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-							/>
-							<path
-								v-if="!isOpen"
-								fill-rule="evenodd"
-								d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-							/>
-						</svg>
-					</button>
-				</div>
-			</div>
-			<nav
-				:class="isOpen ? 'block' : 'hidden'"
-				class="px-2 pt-2 pb-4 sm:flex sm:p-0"
+			<div
+				class="flex justify-between w-full px-6 md:px-0"
+				:class="{ 'shadow md:shadow-none pb-6 md:pb-0': isOpen }"
 			>
-				<a
-					href="#"
-					class="block mt-1 sm:mt-0 sm:ml-2 px-2 py-1 font-semibold rounded"
-				><NavigationItem
+				<!-- Logo -->
+				<router-link
+					to="/"
+					class="text-primary text-2xl font-bold flex flex-shrink-0"
+				>
+					P3K Team
+				</router-link>
+
+				<!-- Hamburger menu -->
+				<button
+					type="button"
+					class="block md:hidden text-2xl h-10 w-10 rounded hover:bg-gray-200 focus:outline-none flex-shrink-0"
+					@click="toggleNavigation"
+				>
+					<!-- https://stackoverflow.com/questions/49343425/vue-js-cant-toggle-a-font-awesome-icon -->
+					<template v-if="!isOpen">
+						<span>
+							<i class="fas fa-bars"></i>
+						</span>
+					</template>
+					<template v-else>
+						<span>
+							<i class="fas fa-times"></i>
+						</span>
+					</template>
+				</button>
+			</div>
+
+			<ul
+				class="flex w-full flex-col md:flex-row justify-center md:justify-end items-center pt-6 md:pt-0"
+				:class="{ 'hidden md:flex': !isOpen }"
+			>
+				<NavigationItem
 					v-for="(item, index) in navigationItems"
 					:key="index"
 					:url="item.url"
 					:text="item.text"
 				/>
-				</a>
-			</nav>
-		</header>
+			</ul>
+		</div>
 	</nav>
 </template>
 
@@ -69,6 +71,16 @@ export default {
 			],
 			isOpen: false
 		};
+	},
+	methods: {
+		toggleNavigation() {
+			this.isOpen = !this.isOpen;
+		}
+	},
+	watch: {
+		$route() {
+			this.isOpen = false;
+		}
 	}
 };
 </script>
