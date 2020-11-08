@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="bg-gray-100 flex flex-col lg:flex-row items-center"
+		class="bg-gray-100 lg:flex items-center"
 		data-e2e-id="contactPage"
 	>
 		<div

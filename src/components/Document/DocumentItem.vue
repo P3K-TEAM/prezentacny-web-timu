@@ -12,11 +12,11 @@
 		<div class="inline-block w-1/4 md:w-1/4 text-right">
 			<a
 				:href="link"
-				class="bg-primary rounded text-white font-bold py-2 px-3 md:px-2 ml-auto invisible group-hover:visible"
+				class="rounded font-bold py-2 px-3 md:px-2 ml-auto visible text-gray-500 bg-gray-200 md:invisible md:text-white md:bg-primary group-hover:visible"
 				target="_blank"
 				data-e2e-id="documentItemDownloadButton"
 			>
-				<span class="mr-2 hidden sm:inline">Stiahnuť</span>
+				<span class="mr-2 hidden md:inline">Stiahnuť</span>
 				<i class="fas fa-download" />
 			</a>
 		</div>

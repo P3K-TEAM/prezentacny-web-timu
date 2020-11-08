@@ -3,12 +3,12 @@
 		class="bg-gray-200"
 		data-e2e-id="documentsPage"
 	>
-		<div class="sm:px-auto px-8 container mx-auto mt-10">
+		<div class="px-6 md:px-0 container mx-auto my-10">
 			<h1 class="text-2xl font-bold mb-4">
 				Dokumenty
 			</h1>
 			<div class="bg-white rounded shadow">
-				<div class="border-b-2 border-gray-300 flex overflow-x-auto overflow-y-hidden">
+				<div class="border-b-2 border-gray-300 overflow-x-auto flex">
 					<DocumentTab
 						v-for="tab in Object.keys(documents)"
 						:key="tab"

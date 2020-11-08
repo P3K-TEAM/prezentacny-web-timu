@@ -1,7 +1,7 @@
 <template>
 	<nav
 		data-e2e-id="navigation"
-		class="absolute w-full py-6 bg-white z-10 shadow-sm"
+		class="fixed w-full py-6 bg-white z-20 shadow-b-sm"
 	>
 		<div
 			class="w-full md:container mx-auto flex md:flex-row justify-between items-center"
@@ -9,7 +9,7 @@
 		>
 			<div
 				class="flex justify-between w-full px-6 md:px-0"
-				:class="{ 'shadow md:shadow-none pb-6 md:pb-0': isOpen }"
+				:class="{ 'shadow-b-sm md:shadow-none pb-6 md:pb-0': isOpen }"
 			>
 				<!-- Logo -->
 				<router-link
@@ -84,3 +84,9 @@ export default {
 	}
 };
 </script>
+
+<style>
+.shadow-b-sm {
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.05);
+}
+</style>
