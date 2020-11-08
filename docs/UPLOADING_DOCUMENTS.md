@@ -5,7 +5,7 @@ need to be updated manually.
 
 ### The current workflow is:
 
--   write the documentation in the [LaTeX](https://www.latex-project.org/) and
+-   write the document in the [LaTeX](https://www.latex-project.org/) and
     compile the files to the PDF
 -   add the documents into webpage static data
 -   rebuild the project
@@ -13,10 +13,10 @@ need to be updated manually.
 
 Each of these steps are described below in detail.
 
-## Writing the documentation
+## Writing the document
 
-As mentioned above, we write the documentation in [LaTeX](https://www.latex-project.org/) syntax for being constant
-in the documentation.
+As mentioned above, we write the documents in [LaTeX](https://www.latex-project.org/) syntax for being constant
+in the template.
 
 Both the source files and output PDF's are stored in our [documents repository](https://github.com/P3K-TEAM/documents).
 The source files are present in the `src` directory - please respect the folder structure. It should mirror the tabs in the documents page of our web.
