@@ -49,7 +49,86 @@ export default {
 		return {
 			selectedTab: '',
 			documents: {
-				'Zápisnice': [],
+				'Zápisnice': [
+					{
+						name: 'Zápisnica č.1 - stretnutie s vedúcim',
+						date: '2.10.2020',
+						link:
+							'/download/zapisnice/zapisnica1.pdf'
+					},
+					{
+						name: 'Zápisnica č.1 - stretnutie v tíme',
+						date: '7.10.2020',
+						link:
+							'/download/zapisnice/zapisnica1_1.pdf'
+					},
+					{
+						name: 'Zápisnica č.2 - stretnutie s vedúcim',
+						date: '9.10.2020',
+						link:
+							'/download/zapisnice/zapisnica2.pdf'
+					},
+					{
+						name: 'Zápisnica č.2 - stretnutie v tíme',
+						date: '14.10.2020',
+						link:
+							'/download/zapisnice/zapisnica2_2.pdf'
+					},
+					{
+						name: 'Zápisnica č.3 - stretnutie s vedúcim',
+						date: '16.10.2020',
+						link:
+							'/download/zapisnice/zapisnica3.pdf'
+					},
+					{
+						name: 'Zápisnica č.3 - stretnutie v tíme',
+						date: '21.10.2020',
+						link:
+							'/download/zapisnice/zapisnica3_3.pdf'
+					},
+					{
+						name: 'Zápisnica č.4 - stretnutie s vedúcim',
+						date: '23.10.2020',
+						link:
+							'/download/zapisnice/zapisnica4.pdf'
+					},
+					{
+						name: 'Zápisnica č.4 - stretnutie v tíme',
+						date: '28.10.2020',
+						link:
+							'/download/zapisnice/zapisnica4_4.pdf'
+					},
+					{
+						name: 'Zápisnica č.5 - stretnutie s vedúcim',
+						date: '30.10.2020',
+						link:
+							'/download/zapisnice/zapisnica5.pdf'
+					},
+					{
+						name: 'Zápisnica č.5 - stretnutie v tíme',
+						date: '4.11.2020',
+						link:
+							'/download/zapisnice/zapisnica5_5.pdf'
+					},
+					{
+						name: 'Zápisnica č.6 - stretnutie s vedúcim',
+						date: '6.11.2020',
+						link:
+							'/download/zapisnice/zapisnica6.pdf'
+					},
+					{
+						name: 'Zápisnica č.6 - stretnutie v tíme',
+						date: '11.11.2020',
+						link:
+							'/download/zapisnice/zapisnica6_6.pdf'
+					},
+					{
+						name: 'Zápisnica č.7 - stretnutie s vedúcim',
+						date: '13.11.2020',
+						link:
+							'/download/zapisnice/zapisnica7.pdf'
+					}
+				],
 				'Retrospektívy': [],
 				'Exporty úloh': [],
 				'Metodiky': [
