@@ -159,6 +159,11 @@ export default {
 						name: 'Verziovanie zdrojového kódu',
 						date: '5.11.2020',
 						link: '/download/metodiky/metodika-git.pdf'
+					},
+					{
+						name: 'Code review',
+						date: '19.11.2020',
+						link: '/download/metodiky/metodika-code-review.pdf'
 					}
 				]
 			}
