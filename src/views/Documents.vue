@@ -164,6 +164,11 @@ export default {
 						name: 'Code review',
 						date: '19.11.2020',
 						link: '/download/metodiky/metodika-code-review.pdf'
+					},
+					{
+						name: 'Testovanie',
+						date: '20.11.2020',
+						link: '/download/metodiky/metodika-testovania.pdf'
 					}
 				]
 			}
