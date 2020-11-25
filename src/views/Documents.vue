@@ -127,10 +127,66 @@ export default {
 						date: '13.11.2020',
 						link:
 							'/download/zapisnice/zapisnica7.pdf'
+					},
+					{
+						name: 'Zápisnica č.7 - stretnutie v tíme',
+						date: '18.11.2020',
+						link:
+							'/download/zapisnice/zapisnica7_7.pdf'
+					},
+					{
+						name: 'Zápisnica č.8 - stretnutie s vedúcim',
+						date: '20.11.2020',
+						link:
+							'/download/zapisnice/zapisnica8.pdf'
+					},
+					{
+						name: 'Zápisnica č.8 - stretnutie v tíme',
+						date: '25.11.2020',
+						link:
+							'/download/zapisnice/zapisnica8_8.pdf'
 					}
 				],
-				'Retrospektívy': [],
-				'Exporty úloh': [],
+				'Retrospektívy': [
+					{
+						name: 'Šprint 1',
+						date: '23.10.2020',
+						link:
+							'/download/retrospektivy/Sprint1.pdf'
+					},
+					{
+						name: 'Šprint 2',
+						date: '6.11.2020',
+						link:
+							'/download/retrospektivy/Sprint2.pdf'
+					},
+					{
+						name: 'Šprint 3',
+						date: '20.11.2020',
+						link:
+							'/download/retrospektivy/Sprint3.pdf'
+					}
+				],
+				'Exporty úloh': [
+					{
+						name: 'Export úloh z 1.šprintu',
+						date: '23.10.2020',
+						link:
+							'/download/exporty/export-uloh-sprint-1.pdf'
+					},
+					{
+						name: 'Export úloh z 2.šprintu',
+						date: '6.11.2020',
+						link:
+							'/download/exporty/export-uloh-sprint-2.pdf'
+					},
+					{
+						name: 'Export úloh z 3.šprintu',
+						date: '20.11.2020',
+						link:
+							'/download/exporty/export-uloh-sprint-3.pdf'
+					}
+				],
 				'Metodiky': [
 					{
 						name: 'Definition of Done',
