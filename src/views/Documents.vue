@@ -145,7 +145,31 @@ export default {
 						date: '25.11.2020',
 						link:
 							'/download/zapisnice/zapisnica8_8.pdf'
-					}
+					},
+					{
+						name: 'Zápisnica č.9 - stretnutie s vedúcim',
+						date: '27.11.2020',
+						link:
+							'/download/zapisnice/zapisnica9.pdf'
+					},
+					{
+						name: 'Zápisnica č.9 - stretnutie v tíme',
+						date: '2.12.2020',
+						link:
+							'/download/zapisnice/zapisnica9_9.pdf'
+					},
+					{
+						name: 'Zápisnica č.10 - stretnutie s vedúcim',
+						date: '4.12.2020',
+						link:
+							'/download/zapisnice/zapisnica10.pdf'
+					},
+					{
+						name: 'Zápisnica č.11 - stretnutie s vedúcim',
+						date: '16.12.2020',
+						link:
+							'/download/zapisnice/zapisnica11.pdf'
+					},
 				],
 				'Retrospektívy': [
 					{
@@ -165,6 +189,12 @@ export default {
 						date: '20.11.2020',
 						link:
 							'/download/retrospektivy/Sprint3.pdf'
+					},
+					{
+						name: 'Šprint 4',
+						date: '4.12.2020',
+						link:
+							'/download/retrospektivy/Sprint4.pdf'
 					}
 				],
 				'Exporty úloh': [
@@ -185,6 +215,12 @@ export default {
 						date: '20.11.2020',
 						link:
 							'/download/exporty/export-uloh-sprint-3.pdf'
+					},
+					{
+						name: 'Export úloh z 4.šprintu',
+						date: '18.12.2020',
+						link:
+							'/download/exporty/export-uloh-sprint-4.pdf'
 					}
 				],
 				'Metodiky': [
@@ -225,6 +261,20 @@ export default {
 						name: 'Testovanie',
 						date: '20.11.2020',
 						link: '/download/metodiky/metodika-testovania.pdf'
+					}
+				],
+				'Dokumentácie': [
+					{
+						name: 'Dokumentácia riadenia',
+						date: '18.12.2020',
+						link:
+							'/download/dokumentacie/dokumentacia_riadenia.pdf'
+					},
+					{
+						name: 'Dokumentácia inžinierskeho diela',
+						date: '18.12.2020',
+						link:
+							'/download/dokumentacie/dokumentacia_ing_diela.pdf'
 					}
 				]
 			}
