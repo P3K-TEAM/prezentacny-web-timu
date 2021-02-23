@@ -6,7 +6,7 @@
     "serve": "node scripts/start-web-server.js --port 8080",
     "build": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint --no-fix",
-    "test:e2e": "node scripts/run-cypress-tests.js open --config \"{baseUrl:'http://localhost:8080'}\"",
+    "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
