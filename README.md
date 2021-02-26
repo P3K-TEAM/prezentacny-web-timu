@@ -1,5 +1,7 @@
 # P3K TEAM - Team web
 
+![master pipeline](https://github.com/P3K-TEAM/prezentacny-web-timu/actions/workflows/github-ci.yml/badge.svg?branch=master)
+
 ## Table of contents
 
 1. [Repository contents](#repository-contents)
