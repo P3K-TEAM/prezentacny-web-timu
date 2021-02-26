@@ -8,6 +8,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          lfs: true
 
       - name: Install packages
         run: npm install
@@ -24,7 +25,9 @@ jobs:
 
       - name: Build App
         if: contains(github.ref, 'master')  # only on master branch
-        run: npm run build
+        run: |
+          git lfs checkout
+          npm run build
 
       - name: Deploy
         if: contains(github.ref, 'master')  # only on master branch
