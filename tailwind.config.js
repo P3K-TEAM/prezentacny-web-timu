@@ -1,11 +1,12 @@
 module.exports = {
-	purge: [
-		'./src/**/*.vue',
-	],
+	purge: {
+		preserveHtmlElements: false,
+		content: ['./src/**/*.vue']
+	},
 	theme: {
 		extend: {
 			borderWidth: {
-				3: '3px',
+				3: '3px'
 			},
 			colors: {
 				primary: '#17CDC4',
@@ -33,7 +34,7 @@ module.exports = {
 	},
 	variants: {
 		borderWidth: ['group-hover'],
-		visibility: ['responsive','group-hover']
+		visibility: ['responsive', 'group-hover']
 	},
 	plugins: []
 };
