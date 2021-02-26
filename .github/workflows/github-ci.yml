@@ -29,6 +29,13 @@ jobs:
           git lfs checkout
           npm run build
 
+      - name: Publish build artifacts
+        if: contains(github.ref, 'master')  # only on master branch
+        uses: actions/upload-artifact@v2
+        with:
+          name: build artifacts
+          path: dist
+
       - name: Deploy
         if: contains(github.ref, 'master')  # only on master branch
         uses: burnett01/rsync-deployments@4.1
