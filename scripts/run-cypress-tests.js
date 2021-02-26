@@ -17,6 +17,8 @@ async function main() {
 		)
 	};
 
+	console.log('process env ci',process.env['CI']);
+
 	if (!(await isDevServerRunning(options.config.baseUrl))) {
 		throw new Error(
 			'Dev server is not running! Please run `npm run serve`'
