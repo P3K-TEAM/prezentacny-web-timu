@@ -5,11 +5,9 @@ need to be updated manually.
 
 ### The current workflow is:
 
--   write the document in the [LaTeX](https://www.latex-project.org/) and
-    compile the files to the PDF
--   add the documents into webpage static data
--   rebuild the project
--   upload the documents and the builded files to the webserver
+1. write the document in the [LaTeX](https://www.latex-project.org/) and compile the files to the PDF
+1. add the documents into webpage static data
+1. add the documents into assets
 
 Each of these steps are described below in detail.
 
@@ -55,31 +53,12 @@ Each of the category should be an array of Document objects.
 }
 ```
 
-## Rebuilding the project
+## Adding the documents into assets
 
-As the JavaScript source files have been changed, the whole project needs to be bundled and rebuilt to the
-resulting single JavaScript file.
+Add documents into respective folder in `public/downloads` directory.
 
-You can do that by running the following command:
 
-```shell script
-npm run build
-```
+## Deploy 
 
-## Uploading the documents and built files to the webserver
-
-The workflow of uploading to the server is same for both the documents and source files.
-The built files from previous step are located in `dist` directory.
-
-#### Documents
-
-Documents should be uploaded into `download` folder and respective category subfolder - e.g. `/download/metodiky`.
-:exclamation: The path should match the path you specified in the document object in static webpage data.
-
-#### Built source files
-
-You only need to upload and overwrite the `js` folder - all others remain untouched.
-
-### Connecting to the server using SFTP
-
-Whole workflow of uploading is described in [deploy docs](./DEPLOY.md).
+After you've taken these steps, the documents will be deployed to the webserver automatically after 
+you're changes make it to the `master` branch (e.g. merging the pull request).
