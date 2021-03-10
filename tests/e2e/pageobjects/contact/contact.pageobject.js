@@ -13,4 +13,4 @@ class ContactPageObject {
 	}
 }
 
-module.exports = { ContactPageObject };
+export default ContactPageObject;

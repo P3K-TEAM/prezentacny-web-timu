@@ -1,4 +1,4 @@
-import { DocumentsPageObject } from '../../../pageobjects/documents/documents.pageobject';
+import DocumentsPageObject from '../../../pageobjects/documents/documents.pageobject';
 import waitUntilVisible from '../../../functions/wait-until-visible.function';
 
 describe('Documents', () => {
@@ -8,7 +8,8 @@ describe('Documents', () => {
 		'Zápisnice',
 		'Retrospektívy',
 		'Exporty úloh',
-		'Metodiky'
+		'Metodiky',
+		'Dokumentácie',
 	];
 
 	beforeEach(() => {
@@ -31,13 +32,19 @@ describe('Documents', () => {
 		});
 	});
 
-	it('should allow user to download document', () => {
+	it.only('should allow user to download document', () => {
 		// should contain at least one document
-		documents
-			.getItems()
-			.its('length')
-			.should('be.gt', 0);
+		documents.getItems().its('length').should('be.gt', 0);
 
+		// cypress cannot check opening in new tab, we need to remove the `[target="_blank"]`
+		documents.getDownloadButtonByItemIndex(0).then($downloadBtn => {
+			cy.wrap($downloadBtn)
+				.invoke('attr', 'target')
+				.should('eq', '_blank');
+			cy.wrap($downloadBtn).invoke('removeAttr', 'target');
+		});
+
+		// click download and assert url
 		documents.downloadItemByIndex(0);
 		cy.url().should('match', /\/download\/.*\..*/);
 	});

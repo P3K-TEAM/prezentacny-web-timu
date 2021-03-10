@@ -1,4 +1,4 @@
-import { HomePageObject } from '../../../pageobjects/home/home.pageobject';
+import HomePageObject from '../../../pageobjects/home/home.pageobject';
 import waitUntilVisible from '../../../functions/wait-until-visible.function';
 
 describe('Home', () => {
@@ -8,8 +8,6 @@ describe('Home', () => {
 		cy.visit('/');
 		waitUntilVisible(home.getRoot());
 
-		home.getAboutProjectSection()
-			.scrollIntoView()
-			.should('be.visible');
+		home.getAboutProjectSection().scrollIntoView().should('be.visible');
 	});
 });

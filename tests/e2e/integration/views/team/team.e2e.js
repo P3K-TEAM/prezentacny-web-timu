@@ -1,4 +1,4 @@
-import { TeamPageObject } from '../../../pageobjects/team/team.pageobject';
+import TeamPageObject from '../../../pageobjects/team/team.pageobject';
 import waitUntilVisible from '../../../functions/wait-until-visible.function';
 
 describe('Team', () => {
@@ -13,7 +13,7 @@ describe('Team', () => {
 			'Bc. Anton Rusňák',
 			'Bc. Denisa Mensatorisová',
 			'Bc. Kristián Toldy',
-			'Bc. Oliver Kanát'
+			'Bc. Oliver Kanát',
 		];
 
 		cy.visit('/team');

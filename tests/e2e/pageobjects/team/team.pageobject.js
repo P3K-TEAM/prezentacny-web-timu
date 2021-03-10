@@ -16,4 +16,4 @@ class TeamPageObject {
 	}
 }
 
-module.exports = { TeamPageObject };
+export default TeamPageObject;
