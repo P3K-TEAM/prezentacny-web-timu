@@ -1,4 +1,4 @@
-import { DocumentsPageObject } from '../../../pageobjects/documents/documents.pageobject';
+import DocumentsPageObject from '../../../pageobjects/documents/documents.pageobject';
 import waitUntilVisible from '../../../functions/wait-until-visible.function';
 
 describe('Documents', () => {
@@ -8,7 +8,8 @@ describe('Documents', () => {
 		'Zápisnice',
 		'Retrospektívy',
 		'Exporty úloh',
-		'Metodiky'
+		'Metodiky',
+		'Dokumentácie',
 	];
 
 	beforeEach(() => {
@@ -33,12 +34,13 @@ describe('Documents', () => {
 
 	it('should allow user to download document', () => {
 		// should contain at least one document
-		documents
-			.getItems()
-			.its('length')
-			.should('be.gt', 0);
+		documents.getItems().its('length').should('be.gt', 0);
 
-		documents.downloadItemByIndex(0);
-		cy.url().should('match', /\/download\/.*\..*/);
+		// cypress fails on --page loaded-- event when visiting pdf in Electron
+		// asserting the href and target instead
+		documents.getDownloadButtonByItemIndex(0).then($downloadButton => {
+			expect($downloadButton.attr('href')).to.contain('/download/');
+			expect($downloadButton.attr('target')).to.eq('_blank');
+		});
 	});
 });

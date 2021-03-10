@@ -1,4 +1,4 @@
-import { NavigationPageObject } from '../../pageobjects/global/navigation/navigation.pageobject';
+import NavigationPageObject from '../../pageobjects/global/navigation/navigation.pageobject';
 import waitUntilVisible from '../../functions/wait-until-visible.function';
 
 describe('Navigation', () => {
@@ -7,20 +7,20 @@ describe('Navigation', () => {
 	const navigationItems = [
 		{
 			name: 'O projekte',
-			url: '/'
+			url: '/',
 		},
 		{
 			name: 'Tím',
-			url: '/team'
+			url: '/team',
 		},
 		{
 			name: 'Dokumenty',
-			url: '/documents'
+			url: '/documents',
 		},
 		{
 			name: 'Kontakt',
-			url: '/contact'
-		}
+			url: '/contact',
+		},
 	];
 
 	beforeEach(() => {

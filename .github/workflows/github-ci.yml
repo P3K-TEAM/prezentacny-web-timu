@@ -21,7 +21,6 @@ jobs:
 
       - name: E2E Tests
         run: npm run test:e2e -- --headless
-        continue-on-error: true #TODO: remove
 
       - name: Build App
         if: contains(github.ref, 'master')  # only on master branch

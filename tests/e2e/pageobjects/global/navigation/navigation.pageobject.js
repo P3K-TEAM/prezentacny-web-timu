@@ -21,4 +21,4 @@ class NavigationPageObject {
 	}
 }
 
-module.exports = { NavigationPageObject };
+export default NavigationPageObject;

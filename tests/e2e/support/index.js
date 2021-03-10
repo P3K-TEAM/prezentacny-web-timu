@@ -14,7 +14,35 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+Cypress.on('window:before:load', function (win) {
+	const original = win.EventTarget.prototype.addEventListener;
+
+	win.EventTarget.prototype.addEventListener = function () {
+		if (arguments && arguments[0] === 'beforeunload') {
+			return;
+		}
+		return original.apply(this, arguments);
+	};
+
+	Object.defineProperty(win, 'onbeforeunload', {
+		// eslint-disable-next-line getter-return
+		get: function () {},
+		set: function () {},
+	});
+});
+
+// onbeforeunload can break electron 61, and occasionally flakes tests on chrome 81
+Cypress.on('window:load', window => {
+	const original = window.addEventListener;
+	window.addEventListener = function () {
+		if (arguments && arguments[0] === 'beforeunload') {
+			return;
+		}
+		return original.apply(this, arguments);
+	};
+});
