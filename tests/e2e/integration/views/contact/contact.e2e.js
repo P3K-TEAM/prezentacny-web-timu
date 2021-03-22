@@ -1,4 +1,4 @@
-import { ContactPageObject } from '../../../pageobjects/contact/contact.pageobject';
+import ContactPageObject from '../../../pageobjects/contact/contact.pageobject';
 import waitUntilVisible from '../../../functions/wait-until-visible.function';
 
 describe('Contact', () => {

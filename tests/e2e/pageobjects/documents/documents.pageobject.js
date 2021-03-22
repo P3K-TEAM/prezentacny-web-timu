@@ -18,6 +18,10 @@ class DocumentsPageObject {
 		return cy.contains(this.categoryTab, category);
 	}
 
+	getDownloadButtonByItemIndex(index) {
+		return this.getItems().eq(index).find(this.downloadButton);
+	}
+
 	getItems() {
 		return cy.get(this.documentItem);
 	}
@@ -27,11 +31,9 @@ class DocumentsPageObject {
 	}
 
 	downloadItemByIndex(index) {
-		this.getItems()
-			.eq(index)
-			.find(this.downloadButton)
-			.click({ force: true }); // force is needed, cypress cannot simulate css hover
+		// force is needed, cypress cannot simulate css hover
+		this.getDownloadButtonByItemIndex(index).click({ force: true });
 	}
 }
 
-module.exports = { DocumentsPageObject };
+export default DocumentsPageObject;
