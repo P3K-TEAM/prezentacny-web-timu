@@ -170,6 +170,60 @@ export default {
 						link:
 							'/download/zapisnice/zapisnica11.pdf'
 					},
+					{
+						name: 'Zápisnica č.12 - stretnutie s vedúcim',
+						date: '17.2.2021',
+						link:
+							'/download/zapisnice/zapisnica12.pdf'
+					},
+					{
+						name: 'Zápisnica č.12 - stretnutie v tíme',
+						date: '22.2.2021',
+						link:
+							'/download/zapisnice/zapisnica12_12.pdf'
+					},
+					{
+						name: 'Zápisnica č.13 - stretnutie s vedúcim',
+						date: '24.2.2021',
+						link:
+							'/download/zapisnice/zapisnica13.pdf'
+					},
+					{
+						name: 'Zápisnica č.13 - stretnutie v tíme',
+						date: '1.3.2021',
+						link:
+							'/download/zapisnice/zapisnica13_13.pdf'
+					},
+					{
+						name: 'Zápisnica č.14 - stretnutie s vedúcim',
+						date: '3.3.2021',
+						link:
+							'/download/zapisnice/zapisnica14.pdf'
+					},
+					{
+						name: 'Zápisnica č.14 - stretnutie v tíme',
+						date: '8.3.2021',
+						link:
+							'/download/zapisnice/zapisnica14_14.pdf'
+					},
+					{
+						name: 'Zápisnica č.15 - stretnutie s vedúcim',
+						date: '10.3.2021',
+						link:
+							'/download/zapisnice/zapisnica15.pdf'
+					},
+					{
+						name: 'Zápisnica č.15 - stretnutie v tíme',
+						date: '15.3.2021',
+						link:
+							'/download/zapisnice/zapisnica15_15.pdf'
+					},
+					{
+						name: 'Zápisnica č.16 - stretnutie s vedúcim',
+						date: '17.3.2021',
+						link:
+							'/download/zapisnice/zapisnica16.pdf'
+					},
 				],
 				'Retrospektívy': [
 					{
