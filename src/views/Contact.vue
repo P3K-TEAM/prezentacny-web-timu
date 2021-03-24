@@ -1,15 +1,10 @@
 <template>
-	<div
-		class="bg-gray-100 lg:flex items-center"
-		data-e2e-id="contactPage"
-	>
+	<div class="bg-gray-100 lg:flex items-center" data-e2e-id="contactPage">
 		<div
 			class="flex justify-center w-full lg:w-1/2 bg-primary py-20 lg:py-32 skewed-wrapper"
 		>
 			<div class="w-4/5 lg:w-3/5 text-white">
-				<h1 class="text-4xl lg:text-2xl font-bold">
-					Napíšte nám
-				</h1>
+				<h1 class="text-4xl lg:text-2xl font-bold">Napíšte nám</h1>
 				<p class="text-xl lg:text-base">
 					V prípade akýchkoľvek otázok nás neváhajte kontaktovať na
 					jednom z uvedených linkov.
@@ -23,7 +18,7 @@
 				:text="item.text"
 				:icon="item.icon"
 				:link="item.link"
-			/>
+			></ContactItem>
 		</div>
 	</div>
 </template>
@@ -35,16 +30,16 @@ export default {
 	components: {
 		ContactItem
 	},
-	data: function() {
+	data: function () {
 		return {
 			items: [
 				{
-					icon: 'far fa-envelope',
+					icon: ['far', 'envelope'],
 					text: 'tim10fiit@googlegroups.com',
 					link: 'mailto:tim10fiit@googlegroups.com'
 				},
 				{
-					icon: 'fas fa-map-marker-alt',
+					icon: ['fas', 'map-marker-alt'],
 					text: `Fakulta informatiky a informačných technologií<br>
 						   Slovenská Technická Univerzita v Bratislave<br>
 						   Iľkovičova 2<br>

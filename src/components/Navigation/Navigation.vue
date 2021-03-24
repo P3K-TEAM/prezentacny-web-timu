@@ -28,12 +28,12 @@
 					<!-- https://stackoverflow.com/questions/49343425/vue-js-cant-toggle-a-font-awesome-icon -->
 					<template v-if="!isOpen">
 						<span>
-							<i class="fas fa-bars"></i>
+							<fa-icon :icon="['fas', 'bars']" />
 						</span>
 					</template>
 					<template v-else>
 						<span>
-							<i class="fas fa-times"></i>
+							<fa-icon :icon="['fas', 'times']" />
 						</span>
 					</template>
 				</button>
@@ -61,7 +61,7 @@ export default {
 	components: {
 		NavigationItem
 	},
-	data: function() {
+	data: function () {
 		return {
 			navigationItems: [
 				{ url: '/', text: 'O projekte' },

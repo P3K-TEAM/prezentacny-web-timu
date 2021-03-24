@@ -3,7 +3,7 @@
 		<div
 			class="flex flex-shrink-0 justify-center items-center w-10 h-10 lg:w-12 lg:h-12 bg-white rounded-full shadow"
 		>
-			<i :class="icon" class="text-xl lg:text-2xl text-primary" />
+			<fa-icon :icon="icon" class="text-xl lg:text-2xl text-primary" />
 		</div>
 		<div class="ml-5" :class="{ 'group cursor-pointer': !!link }">
 			<a
@@ -27,7 +27,7 @@ export default {
 		},
 		icon: {
 			required: true,
-			type: String
+			type: Array
 		},
 		link: String
 	}
