@@ -17,7 +17,7 @@
 				data-e2e-id="documentItemDownloadButton"
 			>
 				<span class="mr-2 hidden md:inline">Stiahnuť</span>
-				<i class="fas fa-download" />
+				<fa-icon :icon="['fas', 'download']" />
 			</a>
 		</div>
 	</div>

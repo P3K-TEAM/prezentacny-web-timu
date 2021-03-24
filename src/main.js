@@ -3,8 +3,7 @@ import App from './App.vue';
 import router from './router';
 
 // Font Awesome Icons
-import '@fortawesome/fontawesome-free/css/all.css';
-import '@fortawesome/fontawesome-free/js/all.js';
+import './icons';
 
 // Root styles
 import '@/assets/scss/app.scss';
