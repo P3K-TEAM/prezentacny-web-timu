@@ -207,23 +207,42 @@ export default {
 							'/download/zapisnice/zapisnica14_14.pdf'
 					},
 					{
-						name: 'Zápisnica č.15 - stretnutie s vedúcim',
-						date: '10.3.2021',
-						link:
-							'/download/zapisnice/zapisnica15.pdf'
-					},
-					{
-						name: 'Zápisnica č.15 - stretnutie v tíme',
-						date: '15.3.2021',
-						link:
-							'/download/zapisnice/zapisnica15_15.pdf'
-					},
-					{
-						name: 'Zápisnica č.16 - stretnutie s vedúcim',
-						date: '17.3.2021',
-						link:
-							'/download/zapisnice/zapisnica16.pdf'
-					},
+                        name: 'Zápisnica č.15 - stretnutie s vedúcim',
+                        date: '10.3.2021',
+                        link:
+                            '/download/zapisnice/zapisnica15.pdf'
+                    },
+                    {
+                        name: 'Zápisnica č.15 - stretnutie v tíme',
+                        date: '15.3.2021',
+                        link:
+                            '/download/zapisnice/zapisnica15_15.pdf'
+                    },
+                    {
+                        name: 'Zápisnica č.16 - stretnutie s vedúcim',
+                        date: '17.3.2021',
+                        link:
+                            '/download/zapisnice/zapisnica16.pdf'
+                    },
+                    {
+                        name: 'Zápisnica č.16 - stretnutie v tíme',
+                        date: '22.3.2021',
+                        link:
+                            '/download/zapisnice/zapisnica16_16.pdf'
+                    },
+                    {
+                        name: 'Zápisnica č.17 - stretnutie s vedúcim',
+                        date: '24.3.2021',
+                        link:
+                            '/download/zapisnice/zapisnica17.pdf'
+                    },
+                    {
+                        name: 'Zápisnica č.17 - stretnutie v tíme',
+                        date: '29.3.2021',
+                        link:
+                            '/download/zapisnice/zapisnica17_17.pdf'
+                    },
+
 				],
 				'Retrospektívy': [
 					{
