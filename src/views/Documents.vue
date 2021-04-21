@@ -242,6 +242,36 @@ export default {
                         link:
                             '/download/zapisnice/zapisnica17_17.pdf'
                     },
+					{
+                        name: 'Zápisnica č.18 - stretnutie s vedúcim',
+                        date: '31.3.2021',
+                        link:
+                            '/download/zapisnice/zapisnica18.pdf'
+                    },
+                    {
+                        name: 'Zápisnica č.18 - stretnutie v tíme',
+                        date: '5.4.2021',
+                        link:
+                            '/download/zapisnice/zapisnica18_18.pdf'
+                    },
+					{
+                        name: 'Zápisnica č.19 - stretnutie s vedúcim',
+                        date: '7.4.2021',
+                        link:
+                            '/download/zapisnice/zapisnica19.pdf'
+                    },
+                    {
+                        name: 'Zápisnica č.19 - stretnutie v tíme',
+                        date: '12.4.2021',
+                        link:
+                            '/download/zapisnice/zapisnica19_19.pdf'
+                    },
+					{
+                        name: 'Zápisnica č.20 - stretnutie s vedúcim',
+                        date: '14.4.2021',
+                        link:
+                            '/download/zapisnice/zapisnica20.pdf'
+                    },
 
 				],
 				'Retrospektívy': [
@@ -265,9 +295,39 @@ export default {
 					},
 					{
 						name: 'Šprint 4',
-						date: '4.12.2020',
+						date: '16.12.2020',
 						link:
 							'/download/retrospektivy/Sprint4.pdf'
+					},
+					{
+						name: 'Globálna retrospektíva po ZS',
+						date: '16.12.2020',
+						link:
+							'/download/retrospektivy/Globalna_retrospektiva_ZS.pdf'
+					},
+					{
+						name: 'Šprint 5',
+						date: '3.3.2020',
+						link:
+							'/download/retrospektivy/Sprint5.pdf'
+					},
+					{
+						name: 'Šprint 6',
+						date: '17.3.2020',
+						link:
+							'/download/retrospektivy/Sprint6.pdf'
+					},
+					{
+						name: 'Šprint 7',
+						date: '31.3.2021',
+						link:
+							'/download/retrospektivy/Sprint7.pdf'
+					},
+					{
+						name: 'Šprint 8',
+						date: '14.4.2021',
+						link:
+							'/download/retrospektivy/Sprint8.pdf'
 					}
 				],
 				'Exporty úloh': [
@@ -291,9 +351,33 @@ export default {
 					},
 					{
 						name: 'Export úloh z 4.šprintu',
-						date: '18.12.2020',
+						date: '16.12.2020',
 						link:
 							'/download/exporty/export-uloh-sprint-4.pdf'
+					},
+					{
+						name: 'Export úloh z 5.šprintu',
+						date: '3.3.2021',
+						link:
+							'/download/exporty/export-uloh-sprint-5.pdf'
+					},
+					{
+						name: 'Export úloh z 6.šprintu',
+						date: '17.3.2021',
+						link:
+							'/download/exporty/export-uloh-sprint-6.pdf'
+					}, 
+					{
+						name: 'Export úloh z 7.šprintu',
+						date: '31.3.2021',
+						link:
+							'/download/exporty/export-uloh-sprint-7.pdf'
+					}, 
+					{
+						name: 'Export úloh z 8.šprintu',
+						date: '14.4.2021',
+						link:
+							'/download/exporty/export-uloh-sprint-8.pdf'
 					}
 				],
 				'Metodiky': [
