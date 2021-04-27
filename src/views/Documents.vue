@@ -272,6 +272,12 @@ export default {
                         link:
                             '/download/zapisnice/zapisnica20.pdf'
                     },
+					{
+                        name: 'Zápisnica č.21 - stretnutie s vedúcim',
+                        date: '21.4.2021',
+                        link:
+                            '/download/zapisnice/zapisnica21.pdf'
+                    },
 
 				],
 				'Retrospektívy': [
@@ -328,6 +334,18 @@ export default {
 						date: '14.4.2021',
 						link:
 							'/download/retrospektivy/Sprint8.pdf'
+					},
+					{
+						name: 'Šprint 9',
+						date: '21.4.2021',
+						link:
+							'/download/retrospektivy/Sprint9.pdf'
+					},
+					{
+						name: 'Globálna retrospektíva po LS',
+						date: '21.4.2021',
+						link:
+							'/download/retrospektivy/Globalna_retrospektiva_LS.pdf'
 					}
 				],
 				'Exporty úloh': [
@@ -378,6 +396,12 @@ export default {
 						date: '14.4.2021',
 						link:
 							'/download/exporty/export-uloh-sprint-8.pdf'
+					},
+					{
+						name: 'Export úloh z 9.šprintu',
+						date: '21.4.2021',
+						link:
+							'/download/exporty/export-uloh-sprint-9.pdf'
 					}
 				],
 				'Metodiky': [
@@ -423,13 +447,13 @@ export default {
 				'Dokumentácie': [
 					{
 						name: 'Dokumentácia riadenia',
-						date: '18.12.2020',
+						date: '27.4.2021',
 						link:
 							'/download/dokumentacie/dokumentacia_riadenia.pdf'
 					},
 					{
 						name: 'Dokumentácia inžinierskeho diela',
-						date: '18.12.2020',
+						date: '27.4.2021',
 						link:
 							'/download/dokumentacie/dokumentacia_ing_diela.pdf'
 					}
